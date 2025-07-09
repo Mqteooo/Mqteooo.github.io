@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+ <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PUNK IS NOT DEAD x Mateo</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image
+aframe.prod.js"></script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      #loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        font-family: Arial;
+      }
+      #error {
+        color: red;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loading">
+      <div>
+        <p>punkkkkkkkkkkkkkkisnotdead!!!!</p>
+        <p id="error"></p>
+      </div>
+    </div>
+    <a-scene
+      mindar-image="imageTargetSrc: https://cdn.glitch.global/9334c67c-22f4-42e0
+bd4b-338d135947f3/punkmarks.mind?v=1749189084790; autoStart: true;"
+      vr-mode-ui="enabled: false"
+      renderer="colorManagement: true; antialias: true;"
+      loading-screen="enabled: false"
+    >
+      <a-assets timeout="30000">
+        <!-- Imágenes -->
+        <img
+          id="img1"
+          src="https://cdn.glitch.global/9334c67c-22f4-42e0-bd4b-338d135947f3/1.png?
+ v=1749177583791"
+          crossorigin="anonymous"
+        />
+        <img
+          id="img2"
+          src="https://cdn.glitch.global/9334c67c-22f4-42e0-bd4b-338d135947f3/2.png?
+ v=1749177584476"
+          crossorigin="anonymous"
+        />
+        <img
+          id="img3"
+          src="https://cdn.glitch.global/9334c67c-22f4-42e0-bd4b-338d135947f3/3.png?
+ v=1749177585022"
+          crossorigin="anonymous"
+        />
+        <img
+          id="img4"
+          src="https://cdn.glitch.global/9334c67c-22f4-42e0-bd4b-338d135947f3/4.png?
+ v=1749177585461"
+          crossorigin="anonymous"
+        />
+        <img
+          id="img5"
+          src="https://cdn.glitch.global/9334c67c-22f4-42e0-bd4b-338d135947f3/5.png?
+ v=1749177586013"
+          crossorigin="anonymous"
+        />
+        <img
+          id="img6"
+          src="https://cdn.glitch.global/9334c67c-22f4-42e0-bd4b-338d135947f3/6.png?
+ v=1749177586545"
+          crossorigin="anonymous"
+        />
+        <!-- Audios -->
+        <audio
+          id="aud1"
+          src="https://cdn.glitch.global/9334c67c-22f4-42e0-bd4b-338d135947f3/1.mp3?
+ v=1749177662139"
+          preload="auto"
+          crossorigin="anonymous"
+        ></audio>
+        <audio
+          id="aud2"
+          src="https://cdn.glitch.global/9334c67c-22f4-42e0-bd4b-338d135947f3/2.mp3?
+ v=1749177662934"
+          preload="auto"
+          crossorigin="anonymous"
+        ></audio>
+        <audio
+          id="aud3"
+          src="https://cdn.glitch.global/9334c67c-22f4-42e0-bd4b-338d135947f3/3.mp3?
+ v=1749177663317"
+          preload="auto"
+          crossorigin="anonymous"
+        ></audio>
+        <audio
+          id="aud4"
+          src="https://cdn.glitch.global/9334c67c-22f4-42e0-bd4b-338d135947f3/4.mp3?
+ v=1749177663696"
+          preload="auto"
+          crossorigin="anonymous"
+        ></audio>
+        <audio
+          id="aud5"
+          src="https://cdn.glitch.global/9334c67c-22f4-42e0-bd4b-338d135947f3/5.mp3?
+ v=1749177664053"
+          preload="auto"
+          crossorigin="anonymous"
+        ></audio>
+        <audio
+          id="aud6"
+          src="https://cdn.glitch.global/9334c67c-22f4-42e0-bd4b-338d135947f3/6.mp3?
+ v=1749177664436"
+          preload="auto"
+          crossorigin="anonymous"
+        ></audio>
+      </a-assets>
+      <a-camera position="0 0 0" active="true"></a-camera>
+      <!-- marcadores -->
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-image
+          src="#img1"
+          width="1.2"
+          height="1.6"
+          position="0 0 0.01"
+        ></a-image>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 1">
+        <a-image
+          src="#img2"
+          width="1.2"
+          height="1.6"
+          position="0 0 0.01"
+        ></a-image>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 2">
+        <a-image
+          src="#img3"
+          width="1.2"
+          height="1.6"
+          position="0 0 0.01"
+        ></a-image>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 3">
+        <a-image
+          src="#img4"
+          width="1.2"
+          height="1.6"
+          position="0 0 0.01"
+        ></a-image>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 4">
+        <a-image
+          src="#img5"
+          width="1.2"
+          height="1.6"
+          position="0 0 0.01"
+        ></a-image>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 5">
+        <a-image
+          src="#img6"
+          width="1.2"
+          height="1.6"
+          position="0 0 0.01"
+        ></a-image>
+      </a-entity>
+    </a-scene>
+    <script>
+      const scene = document.querySelector("a-scene");
+      const loadingScreen = document.getElementById("loading");
+      const errorMsg = document.getElementById("error");
+      scene.addEventListener("error", (e) => {
+        console.error("Error en MindAR:", e.detail);
+        errorMsg.textContent = `Error: ${
+          e.detail.message || "Revisa la consola (F12)"
+        }`;
+        errorMsg.style.display = "block";
+      });
+      scene.addEventListener("loaded", () => {
+        loadingScreen.style.display = "none";
+        console.log("¡MindAR cargado correctamente!");
+      });
+      const audios = Array.from({ length: 6 }, (_, i) =>
+        document.getElementById(`aud${i + 1}`)
+      );
+      const targets = document.querySelectorAll("[mindar-image-target]");
+      targets.forEach((target, index) => {
+        target.addEventListener("targetFound", () => {
+          audios[index]
+            ?.play()
+            .catch((e) => console.warn("Error en audio:", e));
+        });
+        target.addEventListener("targetLost", () => {
+          audios[index]?.pause();
+          audios[index].currentTime = 0;
+        });
+      });
+    </script>
+  </body>
+ </html>
